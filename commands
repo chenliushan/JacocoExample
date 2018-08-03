@@ -1,0 +1,11 @@
+mvn test
+
+
+java -javaagent:/home/lschen/Downloads/jacoco/lib/jacocoagent.jar=destfile=target/jacoco-it.exec,append=false -cp /home/lschen/project/ResearchRelated/testJacoco/target/classes:/home/lschen/project/ResearchRelated/testJacoco/target/test-classes:/home/lschen/project/Benchmark/defects4j/framework/projects/lib/junit-4.11.jar org.junit.runner.JUnitCore lab.RectangleTest
+
+
+mvn antrun:run@generate-report -Dskip.int.tests.report=false
+
+
+interpret the XML report
+https://stackoverflow.com/questions/33868761/how-to-interpret-the-jacoco-xml-file
