@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../jacoco-resources/report.gif" type="image/gif"/><title>MainR.java</title><link rel="stylesheet" href="../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../index.html" class="el_report">jacoco-multi Coverage Project</a> &gt; <a href="../index.html" class="el_bundle">jacoco-multi</a> &gt; <a href="index.source.html" class="el_package">lab</a> &gt; <span class="el_source">MainR.java</span></div><h1>MainR.java</h1><pre class="source lang-java linenums">package lab;
+
+<span class="nc" id="L3">public class MainR {</span>
+    public static void main (String[] args){
+<span class="nc" id="L5">        Rectangle rectangle=new Rectangle(3,4,4,3);</span>
+<span class="nc" id="L6">        System.out.println(rectangle.toString());</span>
+<span class="nc" id="L7">        rectangle.rotate();</span>
+<span class="nc" id="L8">        System.out.println(rectangle.toString());</span>
+//        sort(new int[]{3,5,8,4,6,9,7,1});
+
+<span class="nc" id="L11">    }</span>
+    public static int[] sort(int[] toBeOrdered){
+<span class="nc bnc" id="L13" title="All 2 branches missed.">        for(int i=0;i&lt;toBeOrdered.length;i++){</span>
+<span class="nc bnc" id="L14" title="All 2 branches missed.">            for(int j=i+1;j&lt;toBeOrdered.length;j++){</span>
+<span class="nc bnc" id="L15" title="All 2 branches missed.">                if(toBeOrdered[i]&gt;toBeOrdered[j]){</span>
+<span class="nc" id="L16">                    int tmp=toBeOrdered[i];</span>
+<span class="nc" id="L17">                    toBeOrdered[i]=toBeOrdered[j];</span>
+<span class="nc" id="L18">                    toBeOrdered[j]=tmp;</span>
+                }
+            }
+        }
+<span class="nc" id="L22">        return toBeOrdered;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.1.201803210924</span></div></body></html>
