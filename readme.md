@@ -1,4 +1,5 @@
-### An example of using Jacoco 
+ An example of using Jacoco 
+---
 This project is an example of generating detailed line coverage report with the 
 [JACOCO](https://www.jacoco.org/jacoco/trunk/index.html) library.
 
@@ -8,8 +9,13 @@ which is a richer information than the general percentage coverage of classes/me
 
 The detailed report [example](target/coverage-report/html/jacoco-multi/lab/Rectangle.java.html)
 
+Requirements
 ---
+* Maven3.5
+* JDK 1.8
 
+Steps
+---
 There are three steps to generate the detailed coverage report:
 
 * Configure the project with maven (create/config the 'pom.xml' as [this example](pom.xml))
