@@ -14,6 +14,8 @@ Requirements
 * Maven3.5
 * JDK 1.8
 
+[Install JDK1.8 and Maven on Ubuntu](./install_mvn.md)
+
 Steps
 ---
 There are three steps to generate the detailed coverage report:
